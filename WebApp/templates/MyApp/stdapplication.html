@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>WELLCOME TO STUDENT APPLICATION</h3>
+<form action="/saplisave/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+STUDENT_NAME : <input type="text" name="student_name"><br><br>
+STUDENT_EMAIL : <input type="email" name="student_email"><br><br>
+SSC_MARKS: <input type="number" name="ssc_marks"><br><br>
+INTER_MARKS : <input type="number" name="inter_marks"><br><br>
+<input type="submit" value="submit">
+</form><br><br>
+<a href="/">BACK</a>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>WELLCOME TO STAFF LIST</h1>
+{% for each in user %}
+<li> {{each.username}} : <b>{{each.email}}</b></li>
+{% endfor %}<br/><br/>
+
+
+<a href="/">BACK</a>
+<a href="/>Logout</a>
+</body>
+</html>

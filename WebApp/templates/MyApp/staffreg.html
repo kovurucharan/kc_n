@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>WELLCOME TO STAFF REGISTRATION </h1>
+<form action="/stfsave/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+USERNAME: <input type="text" name="username"><br><br>
+EMAIL <input type="email" name="email"><br><br>
+PASSWORD: <input type="password" name="password"><br><br>
+MOBILE NO: <input type="number" name="staff_mob"><br><br>
+<label for="staff_dept"> STAFF_DEPARTMENT</label>
+  <select name="staff_dept" id="staff_dept">
+    <option value="CE">IT</option>
+    <option value="CE">CE</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="ME">ME</option>
+  </select>
+    <br><br>
+<label for="staff_gender"> GENDER</label>
+  <select name="staff_gender" id="staff_gender">
+    <option value="M">M</option>
+    <option value="F">F</option>
+    <option value="O">O</option>
+  </select>
+    <br><br>
+QUALIFICATION: <input type="text" name="qualification"><br><br>
+STAFF_PC : <input type="file" name="staff_pic"><br><br>
+EXPERIENCE: <input type="text" name="experience"><br><br>
+
+<input type="submit" value="REGISTER"><br><br>
+</form>
+<a href="/">BACK</a>
+
+</body>
+</html>

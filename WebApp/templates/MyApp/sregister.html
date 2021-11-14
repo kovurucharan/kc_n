@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>WELLCOME TO STUDENT REGISTRATION</h1>
+<form action="/srsave/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+NAME   : <input type="text" name="username"><br><br>
+EMAIL  : <input type="email" name="email"><br><br>
+PASSWORD : <input type="password" name="password"><br><br>
+MOBILE  : <input type="number" name="mobile"><br><br>
+<label for="department"> DEPARTMENT</label>
+  <select name="department" id="department">
+    <option value="ME">IT</option>
+    <option value="CE">CE</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="ME">ME</option>
+  </select><br><br>
+<label for="gender"> GENDER</label>
+  <select name="gender" id="gender">
+    <option value="M">M</option>
+    <option value="F">F</option>
+    <option value="O">O</option>
+  </select>
+    <br><br>
+FATHER_NAME : <input type="text" name="father_name"><br><br>
+PROFILE_PIC : <input type="file" name="profile_pic"><br><br>
+<input type="submit" value="REGISTER">
+</form><br><br>
+<a href="/">BACK</a>
+</body>
+</html>
