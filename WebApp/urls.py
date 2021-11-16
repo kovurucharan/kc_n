@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('',views.Home,name="home"),
+    path('index/',views.Index),
     path('sapli/',views.StdApplication,name="saplication"),
     path('saplisave/',views.SApliSave,name="sasave"),
     path('sreg/',views.Sregister,name="sreg"),

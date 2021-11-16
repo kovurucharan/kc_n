@@ -6,6 +6,8 @@ from django.contrib.auth import authenticate, login,logout,get_user_model
 from WebApp.models import StudentApplication,StaffRegistration,SRegistration
 from django.contrib.auth.decorators import login_required
 
+def Index(request):
+    return "welcome to STUDENT index page"
 def Home(request):
     return render (request,'MyApp/home.html')
 
